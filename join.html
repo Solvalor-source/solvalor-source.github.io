@@ -2,102 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Join the Adventure</title>
+  <title>Join the Archive</title>
 
-  <!-- Google Fonts for fantasy/medieval feel -->
-  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
 
   <style>
     body {
       font-family: 'Merriweather', serif;
-      background: #f5f0e6; /* parchment background */
-      color: #3b2f2f;
+      background-color: #161616;
+      background-image: url('images/texture-dark-map.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #e6d8b0;
       margin: 0;
-      padding: 0;
     }
 
     header, footer {
-      background-color: #4b3621; /* dark wood tone */
-      color: #f5f0e6;
-      padding: 1em 0;
+      background-color: #242424;
+      color: #e6d8b0;
       text-align: center;
+      padding: 1em 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.8);
     }
 
     nav a {
-      color: #f5f0e6;
+      color: #e6d8b0;
       margin: 0 1em;
       text-decoration: none;
       font-weight: bold;
     }
 
     nav a:hover {
-      color: #e6cfa0;
+      color: #d4b96c;
     }
 
     main {
-      padding: 2em 1em;
+      padding: 3.5em 1em;
       text-align: center;
     }
 
-    main h2 {
-      font-family: 'MedievalSharp', cursive;
+    h2 {
+      font-family: 'Cinzel', serif;
       font-size: 3em;
-      margin-bottom: 0.2em;
-      color: #5a3e2b;
-      text-shadow: 1px 1px 2px #e6cfa0;
+      color: #d4b96c;
+      text-shadow: 2px 2px 8px #000;
+      margin-bottom: 0.5em;
     }
 
-    main p {
+    p {
       font-size: 1.2em;
-      margin-bottom: 2em;
+      line-height: 1.7;
+      max-width: 850px;
+      margin: 0 auto 2.5em;
     }
 
-    /* Signup card */
-    .signup-card {
-      background-color: #fff8f0;
-      border: 1px solid #d1bfa7;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 2em;
+    .oath-panel {
+      background-color: rgba(30, 22, 16, 0.92);
+      border: 1px solid #5a3e2b;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.8);
+      padding: 2.8em;
       margin: 0 auto;
-      max-width: 500px;
+      max-width: 600px;
       text-align: center;
     }
 
-    .signup-card input[type="email"] {
-      padding: 0.8em;
+    .oath-panel input[type="email"] {
       width: 80%;
-      border-radius: 5px;
-      border: 1px solid #d1bfa7;
-      margin-bottom: 1em;
+      padding: 0.9em;
       font-size: 1em;
+      border-radius: 5px;
+      border: 1px solid #5a3e2b;
+      background-color: #1c1c1c;
+      color: #e6d8b0;
+      margin-bottom: 1.5em;
     }
 
-    .signup-card button {
-      background-color: #8b5e3c;
-      color: #f5f0e6;
+    .oath-panel input::placeholder {
+      color: #bfae85;
+    }
+
+    .oath-panel button {
+      background-color: #5a3e2b;
+      color: #e6d8b0;
       border: none;
-      padding: 0.8em 1.5em;
+      padding: 0.9em 2em;
       border-radius: 5px;
       cursor: pointer;
       font-weight: bold;
       font-size: 1em;
+      letter-spacing: 1px;
     }
 
-    .signup-card button:hover {
-      background-color: #5a3e2b;
+    .oath-panel button:hover {
+      background-color: #8b5e3c;
     }
 
     footer {
       font-size: 0.9em;
+      letter-spacing: 1px;
     }
-
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Join the Adventure</h1>
+  <h1>The Archive</h1>
   <nav>
     <a href="index.html">Home</a>
     <a href="world.html">The World</a>
@@ -108,13 +119,23 @@
 </header>
 
 <main>
-  <h2>Stay Connected</h2>
-  <p>Subscribe to receive the latest tales, adventures, and updates from the old world directly to your inbox.</p>
 
-  <div class="signup-card">
+  <h2>Enter the Archive</h2>
+  <p>
+    Not all knowledge is meant for the many. Those who enter the Archive
+    bear witness to truths long forgotten — and stories yet untold.
+  </p>
+
+  <div class="oath-panel">
+    <p>
+      By placing your mark below, you swear to walk the old paths,
+      to guard what is revealed, and to return when the world calls.
+    </p>
+
     <form action="#" method="POST">
-      <input type="email" name="email" placeholder="Enter your email" required><br>
-      <button type="submit">Join the Adventure</button>
+      <input type="email" name="email" placeholder="Your mark (email address)" required>
+      <br>
+      <button type="submit">Bind Your Oath</button>
     </form>
   </div>
 
