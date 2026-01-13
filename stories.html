@@ -1,15 +1,155 @@
-​<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Stories</title>
+  <title>Stories Archive</title>
+  
+  <!-- Google Fonts for fantasy/medieval feel -->
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* General styles */
+    body {
+      font-family: 'Merriweather', serif;
+      background: #f5f0e6; /* parchment background */
+      color: #3b2f2f;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      background-color: #4b3621; /* dark wood tone */
+      color: #f5f0e6;
+      padding: 1em 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #f5f0e6;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #e6cfa0;
+    }
+
+    /* Hero section */
+    main {
+      padding: 2em 1em;
+      text-align: center;
+    }
+
+    main h2 {
+      font-family: 'MedievalSharp', cursive;
+      font-size: 3em;
+      margin-bottom: 0.2em;
+      color: #5a3e2b;
+      text-shadow: 1px 1px 2px #e6cfa0;
+    }
+
+    main p {
+      font-size: 1.2em;
+      margin-bottom: 2em;
+    }
+
+    /* Hero image */
+    .hero-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 2em;
+    }
+
+    /* Story cards */
+    .story {
+      border: 1px solid #d1bfa7;
+      border-radius: 10px;
+      background-color: #fff8f0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 1.5em;
+      margin: 1em auto;
+      max-width: 650px;
+      text-align: left;
+    }
+
+    .story h3 {
+      font-family: 'MedievalSharp', cursive;
+      color: #4b3621;
+      margin-top: 0;
+    }
+
+    .story p {
+      margin-bottom: 1em;
+    }
+
+    .story button {
+      background-color: #8b5e3c;
+      color: #f5f0e6;
+      border: none;
+      padding: 0.8em 1.5em;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    .story button:hover {
+      background-color: #5a3e2b;
+    }
+
+    footer {
+      font-size: 0.9em;
+    }
+
+  </style>
 </head>
 <body>
-  <h1>Stories</h1>
-  <p>This is the stories index page.</p>
-Navigation links 
-<a href="book.html">Explore the Book Series</a>
-<a href="join.html">Sign Up for Updates</a>
-<a href="index.html">Home</a>
+
+<header>
+  <h1>Stories Archive</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="world.html">The World</a>
+    <a href="stories.html">Stories</a>
+    <a href="book.html">The Book</a>
+    <a href="join.html">Join</a>
+  </nav>
+</header>
+
+<main>
+  <!-- Hero Image -->
+  <img src="images/hero.jpg" alt="Fantasy Landscape" class="hero-img">
+
+  <h2>Discover the Tales of Old</h2>
+  <p>Step into a world of ancient lands, hidden cities, and timeless adventures. Each story awaits your imagination.</p>
+
+  <!-- Story highlights -->
+  <div class="story">
+    <h3>Story 1: The Birth of Solvalor</h3>
+    <p>A mysterious city appears in the clouds, holding secrets for those brave enough to explore.</p>
+    <a href="book.html"><button>Read More</button></a>
+  </div>
+
+  <div class="story">
+    <h3>Story 2: The Lost Compass</h3>
+    <p>An ancient compass guides the adventurer through uncharted lands with danger and wonder at every turn.</p>
+    <a href="book.html"><button>Read More</button></a>
+  </div>
+
+  <div class="story">
+    <h3>Story 3: The Whispering Forest</h3>
+    <p>Legends tell of a forest that whispers to those who listen — revealing paths and hidden dangers alike.</p>
+    <a href="book.html"><button>Read More</button></a>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2026 My World Archive
+</footer>
+
 </body>
 </html>
