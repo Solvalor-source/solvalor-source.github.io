@@ -4,89 +4,88 @@
   <meta charset="UTF-8">
   <title>The World</title>
 
-  <!-- Google Fonts for fantasy/medieval feel -->
-  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
 
   <style>
-    /* General styles */
     body {
       font-family: 'Merriweather', serif;
-      background: #f5f0e6; /* parchment background */
-      color: #3b2f2f;
+      background-color: #1c1c1c;
+      background-image: url('images/texture-dark-map.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #e6d8b0;
       margin: 0;
       padding: 0;
     }
 
     header, footer {
-      background-color: #4b3621; /* dark wood tone */
-      color: #f5f0e6;
-      padding: 1em 0;
+      background-color: #2b2b2b;
+      color: #e6d8b0;
       text-align: center;
+      padding: 1em 0;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.6);
     }
 
     nav a {
-      color: #f5f0e6;
+      color: #e6d8b0;
       margin: 0 1em;
       text-decoration: none;
       font-weight: bold;
     }
 
     nav a:hover {
-      color: #e6cfa0;
+      color: #d4b96c;
     }
 
     main {
-      padding: 2em 1em;
+      padding: 2.5em 1em;
       text-align: center;
     }
 
-    main h2 {
-      font-family: 'MedievalSharp', cursive;
+    h2 {
+      font-family: 'Cinzel', serif;
       font-size: 3em;
-      margin-bottom: 0.2em;
-      color: #5a3e2b;
-      text-shadow: 1px 1px 2px #e6cfa0;
+      color: #d4b96c;
+      text-shadow: 2px 2px 6px #000;
+      margin-bottom: 0.5em;
     }
 
-    main p {
+    p {
       font-size: 1.2em;
-      margin-bottom: 2em;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto 2em;
     }
 
-    /* Hero image */
     .hero-img {
       max-width: 100%;
       height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      margin-bottom: 2em;
+      border-radius: 6px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.8);
+      margin-bottom: 2.5em;
     }
 
-    /* World section cards */
-    .world-section {
-      border: 1px solid #d1bfa7;
+    .world-card {
+      background-color: rgba(40, 30, 20, 0.85);
+      border: 1px solid #5a3e2b;
       border-radius: 10px;
-      background-color: #fff8f0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 1.5em;
-      margin: 1em auto;
-      max-width: 650px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+      padding: 2em;
+      margin: 2em auto;
+      max-width: 700px;
       text-align: left;
     }
 
-    .world-section h3 {
-      font-family: 'MedievalSharp', cursive;
-      color: #4b3621;
+    .world-card h3 {
+      font-family: 'Cinzel', serif;
+      color: #d4b96c;
       margin-top: 0;
     }
 
-    .world-section p {
-      margin-bottom: 1em;
-    }
-
-    .world-section button {
-      background-color: #8b5e3c;
-      color: #f5f0e6;
+    .world-card button {
+      background-color: #5a3e2b;
+      color: #e6d8b0;
       border: none;
       padding: 0.8em 1.5em;
       border-radius: 5px;
@@ -95,14 +94,14 @@
       font-size: 1em;
     }
 
-    .world-section button:hover {
-      background-color: #5a3e2b;
+    .world-card button:hover {
+      background-color: #8b5e3c;
     }
 
     footer {
       font-size: 0.9em;
+      letter-spacing: 1px;
     }
-
   </style>
 </head>
 <body>
@@ -119,29 +118,41 @@
 </header>
 
 <main>
-  <!-- Hero Image -->
-  <img src="images/world-hero.jpg" alt="Fantasy World Map" class="hero-img">
 
-  <h2>Explore the World</h2>
-  <p>Step into the lands of old — kingdoms, forests, mountains, and hidden realms await your discovery.</p>
+  <img src="images/world-hero.jpg" alt="Ancient fantasy world map" class="hero-img">
 
-  <!-- World highlights -->
-  <div class="world-section">
+  <h2>The World Beyond the Page</h2>
+  <p>
+    Before the stories were written, the world existed — shaped by war, magic,
+    and the slow passage of forgotten ages. These lands hold echoes of power,
+    loss, and legend.
+  </p>
+
+  <div class="world-card">
     <h3>The Ancient Kingdoms</h3>
-    <p>Discover the sprawling kingdoms that ruled the land centuries ago, each with its own rich history and legends.</p>
-    <a href="stories.html"><button>Explore Stories</button></a>
+    <p>
+      Once united beneath banners of gold and iron, the kingdoms fell to time,
+      betrayal, and ambition. Their ruins still scar the land.
+    </p>
+    <a href="stories.html"><button>Read Their Tales</button></a>
   </div>
 
-  <div class="world-section">
-    <h3>Mystical Forests</h3>
-    <p>Forests whisper their secrets to those who wander among the ancient trees and hidden paths.</p>
-    <a href="stories.html"><button>Discover Tales</button></a>
+  <div class="world-card">
+    <h3>The Wild Realms</h3>
+    <p>
+      Forests older than memory, mountains that touch the sky, and seas where
+      ships vanish without trace.
+    </p>
+    <a href="stories.html"><button>Explore the Wilds</button></a>
   </div>
 
-  <div class="world-section">
-    <h3>Forgotten Ruins</h3>
-    <p>Ruins of lost civilizations hold mysteries waiting to be uncovered by brave explorers.</p>
-    <a href="stories.html"><button>Read the Stories</button></a>
+  <div class="world-card">
+    <h3>The Forgotten Age</h3>
+    <p>
+      An era erased from history — yet its shadows remain. Some secrets were
+      buried for a reason.
+    </p>
+    <a href="stories.html"><button>Uncover the Past</button></a>
   </div>
 
 </main>
