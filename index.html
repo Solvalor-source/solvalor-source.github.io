@@ -2,16 +2,208 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>The Chronicle</title>
-  <meta name="description" content="A recovered archive from a dark fantasy world.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Archive</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Merriweather', serif;
+      background-color: #121212;
+      background-image: url('images/texture-dark-stone.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #e6d8b0;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 2em 1em;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.9);
+    }
+
+    header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 3.5em;
+      margin: 0;
+      color: #7b1e24; /* blood burgundy */
+      text-shadow: 3px 3px 8px #000;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 0.8em;
+      font-size: 1.2em;
+      color: #c8b88a;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      margin-top: 1.5em;
+    }
+
+    nav a {
+      color: #e6d8b0;
+      margin: 0 1.2em;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    nav a:hover {
+      color: #7b1e24;
+    }
+
+    main {
+      text-align: center;
+      padding: 4em 1em;
+    }
+
+    .hero {
+      max-width: 900px;
+      margin: 0 auto 4em;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.9);
+      margin-bottom: 2.5em;
+    }
+
+    .hero h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 2.8em;
+      color: #7b1e24;
+      text-shadow: 2px 2px 6px #000;
+      margin-bottom: 0.5em;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      line-height: 1.7;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #e0d2a0;
+    }
+
+    .gateway {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2em;
+      max-width: 1000px;
+      margin: 4em auto;
+    }
+
+    .gateway-card {
+      background-color: rgba(25, 18, 14, 0.92);
+      border: 1px solid #4a1f22;
+      border-radius: 10px;
+      padding: 2em;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.7);
+    }
+
+    .gateway-card h3 {
+      font-family: 'Cinzel', serif;
+      color: #c9a24d;
+      margin-top: 0;
+    }
+
+    .gateway-card p {
+      font-size: 1em;
+      line-height: 1.6;
+      margin-bottom: 1.5em;
+    }
+
+    .gateway-card a {
+      display: inline-block;
+      text-decoration: none;
+      color: #e6d8b0;
+      font-weight: bold;
+      padding: 0.6em 1.4em;
+      border-radius: 4px;
+      background-color: #4a1f22;
+      transition: background 0.3s;
+    }
+
+    .gateway-card a:hover {
+      background-color: #7b1e24;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 1.5em;
+      font-size: 0.9em;
+      letter-spacing: 1px;
+      color: #bfae85;
+    }
+  </style>
 </head>
 <body>
-  <h1>The Call of Clans</h1>
-  <p>The last records were sealed three generations ago.</p>
+
+<header>
+  <h1>The Archive</h1>
+  <p>Where history bleeds into legend</p>
+
+  <nav>
+    <a href="world.html">The World</a>
+    <a href="stories.html">Stories</a>
+    <a href="book.html">The Book</a>
+    <a href="join.html">Enter</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <img src="images/home-hero.jpg" alt="Dark fantasy landscape">
+
+    <h2>All Worlds Leave Scars</h2>
+    <p>
+      Empires rise. Kingdoms fall. Truth is buried beneath blood and ash.
+      The Archive preserves what time and fire tried to erase.
+    </p>
+  </section>
+
+  <section class="gateway">
+
+    <div class="gateway-card">
+      <h3>The World</h3>
+      <p>
+        Lands shaped by war and forgotten gods. Every border has been paid for
+        in blood.
+      </p>
+      <a href="world.html">View the Lands</a>
+    </div>
+
+    <div class="gateway-card">
+      <h3>The Stories</h3>
+      <p>
+        Chronicles of exile, ambition, betrayal, and survival — written by
+        those who lived them.
+      </p>
+      <a href="stories.html">Read the Chronicles</a>
+    </div>
+
+    <div class="gateway-card">
+      <h3>The Book</h3>
+      <p>
+        A bound record of what the world became — and what it cost.
+      </p>
+      <a href="book.html">Open the Tome</a>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2026 The Archive — All rights sworn
+</footer>
+
 </body>
-</p><a href="world.html">Enter the Archive</a></p>
-</p><a href="stories.html".html">Read the stories of Solvalor</a></p>
-<p><a href="book.html">Explore the first in the series</a></p>
-</p><a href="join.html">Join the email list</a></p>
 </html>
