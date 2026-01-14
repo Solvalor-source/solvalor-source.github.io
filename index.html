@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>The Archive</title>
+  <title>The Archive of Falondor</title>
 
-  <!-- Scholarly / Archaic Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=IM+Fell+English&display=swap" rel="stylesheet">
 
   <style>
@@ -18,7 +17,6 @@
       font-family: 'IM Fell English', serif;
     }
 
-    /* Global restraint */
     a {
       color: #9f8a4b;
       text-decoration: none;
@@ -39,7 +37,7 @@
       font-family: 'Cinzel', serif;
       font-size: 3.2em;
       letter-spacing: 4px;
-      color: #6e1c1c; /* dried blood */
+      color: #6e1c1c;
       text-shadow: 2px 2px 8px #000;
       margin-bottom: 0.4em;
     }
@@ -59,6 +57,13 @@
       letter-spacing: 1px;
     }
 
+    nav a span {
+      display: block;
+      font-size: 0.75em;
+      opacity: 0.5;
+      margin-top: 0.3em;
+    }
+
     main {
       max-width: 820px;
       margin: 0 auto;
@@ -72,6 +77,7 @@
       opacity: 0.6;
       margin: 3em 0;
       letter-spacing: 6px;
+      transition: opacity 1s;
     }
 
     .inscription {
@@ -94,6 +100,33 @@
       font-weight: normal;
     }
 
+    .cta {
+      margin: 8em 0 4em;
+      padding: 3em 2em;
+      border-top: 1px solid rgba(159,138,75,0.2);
+      border-bottom: 1px solid rgba(159,138,75,0.2);
+    }
+
+    .cta p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      margin-bottom: 2em;
+    }
+
+    .cta a {
+      font-family: 'Cinzel', serif;
+      letter-spacing: 2px;
+      color: #d8cfb2;
+      border: 1px solid #6e1c1c;
+      padding: 0.8em 1.6em;
+      opacity: 0.85;
+    }
+
+    .cta a:hover {
+      opacity: 1;
+      background-color: rgba(110,28,28,0.1);
+    }
+
     footer {
       text-align: center;
       padding: 4em 1em;
@@ -110,10 +143,10 @@
   <p>Recovered fragments from the age of the Sun</p>
 
   <nav>
-    <a href="world.html">The World</a>
-    <a href="stories.html">The Chronicles</a>
-    <a href="book.html">The Codex</a>
-    <a href="join.html">The Oath</a>
+    <a href="world.html">The World<span>Geography & Ruin</span></a>
+    <a href="stories.html">The Chronicles<span>Eyewitness Accounts</span></a>
+    <a href="book.html">The Codex<span>Primary Source</span></a>
+    <a href="join.html">The Oath<span>For Those Who Remain</span></a>
   </nav>
 </header>
 
@@ -152,11 +185,29 @@
     This Archive preserves what the Sun could not erase.
   </div>
 
+  <div class="cta">
+    <p>
+      The Chronicle of the Divine Storm was never meant to survive.<br>
+      Its account contradicts treaties, prophecies, and kings.
+    </p>
+    <a href="book.html">READ THE FIRST CHRONICLE</a>
+  </div>
+
 </main>
 
 <footer>
   ☉ Fragment recovered — origin disputed
 </footer>
+
+<script>
+  // Subtle glyph instability (very rare)
+  setInterval(() => {
+    const glyphs = document.querySelectorAll('.glyph');
+    const glyph = glyphs[Math.floor(Math.random() * glyphs.length)];
+    glyph.style.opacity = '0.3';
+    setTimeout(() => glyph.style.opacity = '0.6', 1200);
+  }, 12000);
+</script>
 
 </body>
 </html>
