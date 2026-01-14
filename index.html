@@ -1,23 +1,294 @@
-<h2>The Age of Fracture</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Archive of Falondor</title>
 
-<p>
-The war did not end with victory.
-It ended with <strong>survival</strong>.
-</p>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=IM+Fell+English&display=swap" rel="stylesheet">
 
-<blockquote>
+  <style>
+    /* ---------- BASE ---------- */
+
+    body {
+      margin: 0;
+      background-color: #0f0f0f;
+      background-image: url('images/texture-ash-stone.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #d8cfb2;
+      font-family: 'IM Fell English', serif;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 6em 1.5em;
+    }
+
+    p {
+      line-height: 1.9;
+      margin: 0 0 2.2em;
+    }
+
+    a {
+      color: #9f8a4b;
+      text-decoration: none;
+      opacity: 0.8;
+      position: relative;
+    }
+
+    a:hover {
+      opacity: 1;
+    }
+
+    a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 100%;
+      height: 1px;
+      background: rgba(159,138,75,0.4);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    a:hover::after {
+      opacity: 1;
+    }
+
+    /* ---------- HEADER ---------- */
+
+    header {
+      text-align: center;
+      padding: 6em 1em 4em;
+    }
+
+    header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 3.2em;
+      letter-spacing: 4px;
+      color: #6e1c1c;
+      text-shadow: 2px 2px 8px #000;
+      margin-bottom: 0.4em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      letter-spacing: 1px;
+      opacity: 0.8;
+    }
+
+    nav {
+      margin-top: 4em;
+      display: flex;
+      justify-content: center;
+      gap: 3em;
+      font-size: 0.95em;
+      letter-spacing: 1px;
+    }
+
+    nav a span {
+      display: block;
+      font-size: 0.75em;
+      opacity: 0.5;
+      margin-top: 0.3em;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+
+    h2, h3 {
+      font-family: 'Cinzel', serif;
+      font-weight: normal;
+    }
+
+    h2 {
+      font-size: 1.4em;
+      letter-spacing: 2px;
+      color: #9f8a4b;
+      margin: 4em 0 1.5em;
+    }
+
+    h3 {
+      font-size: 1.1em;
+      letter-spacing: 1.5px;
+      color: #6e1c1c;
+      margin: 3em 0 1em;
+    }
+
+    strong {
+      color: #6e1c1c;
+      font-weight: normal;
+    }
+
+    em {
+      font-style: normal;
+      color: #9f8a4b;
+    }
+
+    /* ---------- GLYPHS & DIVIDERS ---------- */
+
+    .glyph {
+      text-align: center;
+      font-size: 3em;
+      color: #9f8a4b;
+      opacity: 0.5;
+      margin: 4em 0;
+      letter-spacing: 6px;
+      transition: opacity 1s;
+    }
+
+    .divider {
+      text-align: center;
+      margin: 5em 0;
+      color: #9f8a4b;
+      opacity: 0.35;
+      letter-spacing: 6px;
+      font-size: 1.2em;
+    }
+
+    /* ---------- QUOTES ---------- */
+
+    blockquote {
+      margin: 4em 0;
+      padding: 1.5em 2em;
+      border-left: 2px solid rgba(110,28,28,0.5);
+      color: #cfc5a8;
+      opacity: 0.9;
+    }
+
+    blockquote p {
+      margin: 0;
+    }
+
+    /* ---------- CTA ---------- */
+
+    .cta {
+      margin: 8em 0 4em;
+      padding: 3em 2em;
+      border-top: 1px solid rgba(159,138,75,0.2);
+      border-bottom: 1px solid rgba(159,138,75,0.2);
+      text-align: center;
+    }
+
+    .cta p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      margin-bottom: 2em;
+    }
+
+    .cta a {
+      font-family: 'Cinzel', serif;
+      letter-spacing: 2px;
+      color: #d8cfb2;
+      border: 1px solid #6e1c1c;
+      padding: 0.8em 1.6em;
+      opacity: 0.85;
+    }
+
+    .cta a:hover {
+      opacity: 1;
+      background-color: rgba(110,28,28,0.1);
+    }
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+      text-align: center;
+      padding: 4em 1em;
+      font-size: 0.85em;
+      letter-spacing: 1px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>THE ARCHIVE</h1>
+  <p>Recovered fragments from the age of the Sun</p>
+
+  <nav>
+    <a href="world.html">The World<span>Geography & Ruin</span></a>
+    <a href="stories.html">The Chronicles<span>Eyewitness Accounts</span></a>
+    <a href="book.html">The Codex<span>Primary Source</span></a>
+    <a href="join.html">The Oath<span>For Those Who Remain</span></a>
+  </nav>
+</header>
+
+<main>
+
+  <div class="glyph">☉</div>
+
+  <blockquote>
+    <p>
+      “The Sun did not save the world.<br>
+      It revealed it.”
+    </p>
+  </blockquote>
+
+  <h2>The First Record</h2>
+
   <p>
-    “When the storm comes, it will not ask who is innocent.”
+    The earliest surviving accounts speak not of creation,
+    but of <strong>discovery</strong>.
   </p>
-</blockquote>
 
-<div class="divider">☉</div>
+  <p>
+    The Sun King arrived from distant lands bearing no crown,
+    only light — and in that light the realm was
+    <strong>found wanting</strong>.
+  </p>
 
-<p>
-What followed was not peace, but silence.
-</p>
+  <div class="divider">⊙</div>
 
-<div class="note">
-  Archivist’s addendum: This account contradicts royal census records.
-</div>
+  <p>
+    Where the rays lingered longest, blood darkened the soil.
+    Where shadows gathered, memory endured.
+  </p>
+
+  <h3>On Preservation</h3>
+
+  <p>
+    What remains here is incomplete.
+    Names have been burned away.
+    Places renamed.
+    Truths revised beneath the promise of illumination.
+  </p>
+
+  <p>
+    This Archive preserves what the Sun could not erase.
+  </p>
+
+  <div class="glyph">☉</div>
+
+  <div class="cta">
+    <p>
+      The Chronicle of the Divine Storm was never meant to survive.<br>
+      Its account contradicts treaties, prophecies, and kings.
+    </p>
+    <a href="book.html">READ THE FIRST CHRONICLE</a>
+  </div>
+
+</main>
+
+<footer>
+  ☉ Fragment recovered — origin disputed
+</footer>
+
+<script>
+  // Subtle archival instability
+  setInterval(() => {
+    const glyphs = document.querySelectorAll('.glyph');
+    const glyph = glyphs[Math.floor(Math.random() * glyphs.length)];
+    glyph.style.opacity = '0.25';
+    setTimeout(() => glyph.style.opacity = '0.5', 1200);
+  }, 14000);
+</script>
+
+</body>
+</html>
+
 
