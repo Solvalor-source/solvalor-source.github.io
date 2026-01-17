@@ -241,23 +241,76 @@
       following the collapse of the Treaty of the First Wake.
       The version presented here is believed complete.
     </p>
-  </div>
+```html
+    
+<style>
+  .cta-dark-fantasy {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    background: radial-gradient(
+      circle at top,
+      rgba(120, 20, 20, 0.15),
+      rgba(0, 0, 0, 0.9)
+    );
+    border: 1px solid rgba(180, 60, 60, 0.35);
+    box-shadow:
+      0 0 25px rgba(180, 60, 60, 0.15),
+      inset 0 0 40px rgba(0, 0, 0, 0.8);
+  }
 
-  <h3>On the Series</h3>
+  .cta-dark-fantasy .cta-text,
+  .cta-dark-fantasy .cta-subtext {
+    color: #e6d8d8;
+    text-shadow: 0 0 6px rgba(180, 60, 60, 0.25);
+    margin-bottom: 1rem;
+  }
 
-  <p>
-    This volume stands as the first surviving account
-    in a longer sequence of records.
-    Subsequent volumes remain unrecovered.
+  .cta-dark-fantasy .cta-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.85rem 2.2rem;
+    color: #f5eaea;
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid rgba(200, 80, 80, 0.6);
+    background: linear-gradient(
+      180deg,
+      rgba(120, 20, 20, 0.8),
+      rgba(60, 10, 10, 0.9)
+    );
+    box-shadow:
+      0 0 12px rgba(200, 80, 80, 0.5),
+      0 0 30px rgba(200, 80, 80, 0.25),
+      inset 0 0 10px rgba(255, 180, 180, 0.15);
+    transition: all 0.3s ease;
+  }
+
+  .cta-dark-fantasy .cta-button:hover {
+    box-shadow:
+      0 0 20px rgba(220, 100, 100, 0.9),
+      0 0 50px rgba(220, 100, 100, 0.6),
+      inset 0 0 14px rgba(255, 200, 200, 0.25);
+    transform: translateY(-1px);
+  }
+</style>
+
+<div class="cta cta-dark-fantasy">
+  <p class="cta-text">
+    The Archive cannot safely summarise this record.<br>
+    What remains has resisted extraction, redaction, and mercy.
   </p>
 
-  <div class="cta">
-    <p>
-      The Archive cannot safely summarise this text.<br>
-      To know its contents, the account must be witnessed in full.
-    </p>
-    <a href="YOUR-PURCHASE-LINK-HERE">ACCESS THE CHRONICLE</a>
-  </div>
+  <p class="cta-subtext">
+    To know its truth, the chronicle must be witnessed in full.
+  </p>
+
+  <a href="YOUR-PURCHASE-LINK-HERE" class="cta-button">
+    Claim the Chronicle
+  </a>
+</div>
+```
+
 
 </main>
 
